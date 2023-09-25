@@ -6,6 +6,10 @@ class networkmanager::os (){
       $package_name = 'networkmanager'
       $extra_packages = []
     }
+    'debian':{
+      $package_name = 'network-manager'
+      $extra_packages = []
+    }
     'redhat':{
       $package_name = 'NetworkManager'
       $extra_packages = []

@@ -93,7 +93,7 @@ class networkmanager::config (
       ensure  => directory,
       owner   => 'root',
       group   => 'root',
-      recurse => true,
+      recurse => $erase_unmanaged_keyfiles,
       purge   => $erase_unmanaged_keyfiles,
       mode    => '0640';
  }
